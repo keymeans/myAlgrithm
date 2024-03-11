@@ -1,5 +1,3 @@
-package org;
-
 import common.FindSubString;
 import common.Palindrome;
 
