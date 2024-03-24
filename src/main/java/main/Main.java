@@ -1,9 +1,6 @@
 package main;
 
-import common.ConvertToZ;
-import common.FindSubString;
-import common.Palindrome;
-import common.ThreeSum;
+import common.*;
 
 import java.awt.*;
 import java.util.*;
@@ -52,9 +49,25 @@ public class Main {
 //            }
 //            System.out.println("");
         }
+        /*  Z字形算法 */
         String str = "PAYPALISHIRING";
         String res2= ConvertToZ.convertByTwoMatrix(str,3);
         String res = ConvertToZ.convertZ(str,3);
         System.out.println("str:"+str+"\nres:"+res+"\nres2:"+res2);
+        /**
+         * 7.整数反转
+         * 1056389758
+         * 964632435
+         */
+        System.out.println("123/10="+123/10+"\n123/100="+123/100+"\n123/1000="+123/1000);
+        System.out.println("-123/10="+-123/10+"\n-123/100="+-123/100+"\n-123/1000="+-123/1000);
+        System.out.println("-103/10="+-103/10+"\n-103/100="+-103/100+"\n-103/1000="+-103/1000);
+        int[] test = new int[]{1534236469,123,120,201,-120,-201,-123,12,-12};
+        System.out.println("-2 ^ 31="+Math.pow(2,31)+"\n2 ^ 31="+Math.pow(-2,31));
+        System.out.println("964632435*10="+964632435*10);
+        System.out.println("964632435*10.0="+964632435*10.0);
+        for(int testI:test){
+            System.out.println(testI+":"+ IntegerInversion.reverse(testI));
+        }
     }
 }
