@@ -1,3 +1,6 @@
+package main;
+
+import common.ConvertToZ;
 import common.FindSubString;
 import common.Palindrome;
 import common.ThreeSum;
@@ -49,5 +52,9 @@ public class Main {
 //            }
 //            System.out.println("");
         }
+        String str = "PAYPALISHIRING";
+        String res2= ConvertToZ.convertByTwoMatrix(str,3);
+        String res = ConvertToZ.convertZ(str,3);
+        System.out.println("str:"+str+"\nres:"+res+"\nres2:"+res2);
     }
 }
